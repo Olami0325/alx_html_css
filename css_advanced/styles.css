@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0 40px;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    background: transparent;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+nav img{
+    width: 120px;
+}
+.hero{
+  
+    padding-top: 100px;
+    text-align: center;
+    background:url('/css_advanced/asset/images/hero-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1{
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+.hero span{
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+.hero button{
+    margin-top: 25px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #C271FF;
+    cursor: pointer;
+    font-size: 10px;
+}
+.learn h2{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.learn h2 span{
+    margin: 0;
+    padding: 0;
+    display: inline;
+    color: #c271ff;
+    word-spacing: 4px;
+    font-size: 16px;
+}
+.speakers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+   
+}
+.speaker img{
+    border-radius: 50%;
+}
+.speaker h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+.speaker p{
+    font-size: 10px;
+    line-height: 15px;
+    font-style: italic;
+}
+
