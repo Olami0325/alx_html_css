@@ -2,107 +2,122 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-html, body {
   font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.5;
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    background-image: url(./asset/images/object.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
 
-nav{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    padding: 0 40px;
-    top: 0;
-    z-index: 1000;
-    height: 80px;
-    background: transparent;
 }
-nav ul{
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 7%;
+}
+nav ul{
+    display: flex;
     list-style: none;
-    gap: 3rem;
+    gap: 30px;
 }
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    font-size: 12px;
 }
-nav img{
-    width: 120px;
-}
-.hero{
-  
-    padding-top: 100px;
+.hero-intro{
     text-align: center;
-    background:url('/css_advanced/asset/images/hero-bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+}
+.hero-intro h1{
+    font-size: 80px;
+    color: white;
+}
+.hero-intro .hero-span{
+    color: white;
     display: flex;
-    flex-direction: column;
-    color: white;
-    align-items: center;
     justify-content: center;
+    gap: 30px;
 }
-.hero h1{
-    font-weight: 800;
-    font-size: 3.5rem;
-}
-.hero span{
-    display: inline-block;
-    font-size: 12px;
-    margin: 0 10px;
-    font-weight: bold;
-}
-.hero button{
-    margin-top: 25px;
-    padding: 12px 20px;
-    border-radius: 30px;
-    border: none;
-    color: white;
+.hero-intro button{
+    padding: 10px 20px;
+    border-radius: 20px;
     background-color: #C271FF;
+    color: white;
+    outline: none;
+    border: none;
     cursor: pointer;
-    font-size: 10px;
+    margin-top: 30px;
 }
-.learn h2{
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+#pros{
+    padding: 30px 10%;
 }
-.learn h2 span{
-    margin: 0;
-    padding: 0;
-    display: inline;
-    color: #c271ff;
-    word-spacing: 4px;
-    font-size: 16px;
+.pros-cont{
+    text-align: center;
+    color: white;
+    margin-top: 7%;
 }
-.speakers{
+.highlight{
+    color: #C271FF;
+    font-weight: lighter;
+}
+.pros-cont h2{
+    font-weight: lighter;
+    
+}
+.card-cont{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    margin-bottom: 5rem;
-   
+    margin-top: 7%;
 }
-.speaker img{
+.pros-card{
+    text-align: center;
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.pros-card h3{
+    font-size: 14px;
+}
+.pros-card p{
+    font-size: 12px;
+    font-style: italic; 
+}
+.bruce-img{
     border-radius: 50%;
 }
-.speaker h3{
-    font-size: 14px;
-    font-weight: bold;
+#testimonials{
+    background-color: #C271FF;
+    margin-top: 30px;
+    display: flex;
+    justify-content:center ;
+    color: white;
+    padding: 40px 20px;
 }
-.speaker p{
-    font-size: 10px;
-    line-height: 15px;
+.testimonial-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 30px;
+    max-width: 1000px;
+}
+.testimonial-cont blockquote{
+    font-size: 14px;
+    width: 70%;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.testimonial-cont h3{
+    font-size: 14px;
+}
+.testimonial-cont p{
+    font-size: 12px;
     font-style: italic;
 }
-
