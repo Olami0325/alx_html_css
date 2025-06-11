@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
 }
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -16,7 +19,6 @@ header{
     background-repeat: no-repeat;
     min-height: 100vh;
     overflow: hidden;
-
 }
 nav{
     display: flex;
@@ -134,7 +136,7 @@ nav ul li a{
 .list-cont h2{
     text-align: center;
     font-size: 28px;
-    color: #071629;
+    color: #888;
     font-weight: 300;
     margin-bottom: 40px;
 }
@@ -223,7 +225,6 @@ nav ul li a{
 }
 #membership{
     background-color: #071629;
-    /* margin-top: 20px; */
     display: flex;
     justify-content:center ;
     color: white;
@@ -266,7 +267,7 @@ nav ul li a{
     color: #888;
     margin-top: 10px;
     line-height: 1.6;
-    width: 177px;
+    max-width: 167px;
 }
 .membership-cont button{
     background-color: #C271FF;
@@ -278,6 +279,53 @@ nav ul li a{
     font-size: 14px;
     border-radius: 30px;
 }
-
-
+#FAQ{
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+.faq-cont{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.faq-title{
+    color: #888;
+    font-weight: 500;
+    font-size: 24px; 
+    margin-bottom: 40px;  
+}
+.faq-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left;
+}
+.flex-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    text-align: left;
+    min-width: 250px; 
+}
+.faq-item{
+    padding: 20px;
+   
+}
+.faq-item h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #071629;
+    
+}
+.faq-item p{
+    font-size: 14px;
+    color: #888;
+    line-break: 1.6;
+    margin: 0;
+    max-width: 350px;
+}
 
