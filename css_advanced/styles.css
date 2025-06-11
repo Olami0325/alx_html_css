@@ -162,6 +162,7 @@ nav ul li a{
     color: #888;
     margin: 6px 0;
     text-align: left;
+    max-width: 200px;
 }
 .thumbnail {
     position: relative;
@@ -251,7 +252,7 @@ nav ul li a{
 .mem-card{
    padding: 20px;
    flex: 1 1 200px;
-   max-width: 220px;
+   max-width: 200px;
 }
 .mem-card img{
     width: 24px;
@@ -267,7 +268,7 @@ nav ul li a{
     color: #888;
     margin-top: 10px;
     line-height: 1.6;
-    max-width: 167px;
+    max-width: 220px;
 }
 .membership-cont button{
     background-color: #C271FF;
