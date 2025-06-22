@@ -1,0 +1,140 @@
+/* CSS RESET */
+/* A simple reset to remove default browser styling */
+:root {
+  --text-color: #fff;
+  --primary-color: #FF6565;
+  --secondary-color: #071629;
+  --fs-lg: 4.6rem;
+  --fs-md: 3.2rem;
+  --fs-sm: 1.6rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'source-pro', sans-serif;
+}
+
+/* --- Font Imports --- */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('fonts/SpinCycle-OT.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* BASE BODY STYLES */
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Source Sans Pro', sans-serif; 
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* centers content */
+.container {
+  max-width: 1000px;
+  margin: 0 auto; 
+}
+
+/* --- Header/Hero Section Styling --- */
+.hero{
+    background-image: url(./images/background_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navbar Styling */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.nav .logo img{
+    height: 30px;
+    width: auto;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--primary-color);
+}
+
+/* hero styling */
+.hero-content{
+    margin-top: 17%;
+    text-align: center;
+}
+
+.hero-content h1{
+    font-size: var(--fs-sm)
+}
+
+.hero-content .hero-subtitle{
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+}
+
+button{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.8rem 1.4rem;
+    border-radius: 25px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+.hero-content .hero-description{
+    margin-top: 3rem;
+    font-size: 0.7rem;
+    line-height: 1.8;
+    font-weight: normal;
+    opacity: 0.9;
+    margin: 3rem auto;
+    max-width: 480px;
+}
+
+
+
+
