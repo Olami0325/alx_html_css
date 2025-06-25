@@ -139,8 +139,6 @@ button:active {
 
 /* --- Responsive Design for Mobile (480px or less) --- */
 
-
-
 /* Menu icons container */
 .menu-toggle {
   display: none;
@@ -191,5 +189,77 @@ button:active {
     display: none;
   }
 }
+/* What we do section styling */
+.what-we-do-section{
+  padding: 6rem; 
+  background-color: #fff;
+  color: #071629; 
+  text-align: center;
+}
 
+.what-we-do-intro{
+  max-width: 660px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
 
+.what-we-do-intro h2 {
+  font-size: var(--fs-sm);
+  margin-bottom: 1.6rem;
+}
+
+.services{
+  display: flex;
+  flex-wrap: wrap; /* allows the cards to wrap to the next line */
+  justify-content: space-between; 
+  gap: 2rem; 
+  max-width: 1000px;
+}
+
+.card {
+  flex: 1 1 200px; /* grow:1, shrink:1, basis:200px */
+  text-align: center;
+}
+
+.card_img{
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.card_title{
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.card_desc{
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+/* Responsive Design for Mobile */
+
+@media (max-width: 768px) {
+  .what-we-do-section {
+    padding: 3rem 1rem;
+  }
+
+  .what-we-do-intro p {
+    font-size: 0.95rem;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+ 
